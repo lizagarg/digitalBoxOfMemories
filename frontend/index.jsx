@@ -1032,7 +1032,7 @@ function Home() {
     const response = await axios.post(
       "https://digitalboxofmemories.onrender.com/create-order",
       {
-        amount: 99,
+        amount: 1,
       }
     );
 

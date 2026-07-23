@@ -1082,7 +1082,7 @@ function Home() {
 
     const publicId = packageResponse.data.publicId;
 
-    const link = `http://localhost:5173/package/${publicId}`;
+    const link = `http://digital-box-of-memories.vercel.app/package/${publicId}`;
 
     alert(link);
 

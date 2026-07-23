@@ -1030,7 +1030,7 @@ function Home() {
   const createOrder = async () => {
   try {
     const response = await axios.post(
-      "http://localhost:5001/create-order",
+      "https://digitalboxofmemories.onrender.com/create-order",
       {
         amount: 99,
       }
@@ -1057,7 +1057,7 @@ function Home() {
       handler: async function (response) {
   try {
     const verifyResponse = await axios.post(
-      "http://localhost:5001/verify-payment",
+      "https://digitalboxofmemories.onrender.com/verify-payment",
       response
     );
 
@@ -1076,7 +1076,7 @@ function Home() {
     };
 
     const packageResponse = await axios.post(
-      "http://localhost:5001/package",
+      "https://digitalboxofmemories.onrender.com/package",
       payload
     );
 
@@ -1172,7 +1172,7 @@ function PackageViewer() {
     async function fetchPackage() {
       try {
         const response = await axios.get(
-          `http://localhost:5001/package/${publicId}`
+          `https://digitalboxofmemories.onrender.com/package/${publicId}`
         );
 
         setPkg(response.data.package);
